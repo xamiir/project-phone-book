@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Phone Book</title>
+
+	<link rel="stylesheet" href="assets/tailwind.min.css">
+</head>
+<body class="bg-gray-200">
+	<div class="max-w-2xl mx-auto mt-4 border-2 border-gray-500 rounded-lg">
+		<h4 class="text-3xl text-center py-4">Phone Book</h4>
+
+		<div class="my-5">
+			<div class="flex items-center justify-center gap-x-2">
+				<input class="px-4 py-2 outline-none ring-1 focus:ring-2" placeholder="Person Name" id="person-name">
+				<input class="px-4 py-2 outline-none ring-1 focus:ring-2" placeholder="Phone Number" id="phone-number">
+				<button class="bg-green-500 text-white py-2
+					px-4 hover:bg-white hover:text-green-500
+					transition rounded" type="button"
+					onclick="add()">Add</button>
+			</div>
+		</div>
+
+		<div class="my-5 px-3">
+			<div class="flex justify-end">
+				<input class="px-4 py-2 outline-none ring-1 focus:ring-2" placeholder="Search..." id="search">
+			</div>
+
+			<table class="w-full table-fixed mt-4">
+				<thead>
+					<tr>
+						<th class="text-center">Id</th>
+						<th>Name</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+
+				<tbody class="text-center">
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="assets/main.js"></script>
+</body>
+</html>
